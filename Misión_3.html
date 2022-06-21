@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Misión 3</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Grupo 3</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="Misión_1.html">Misión 1</a></li>
+								<li><a href="Misión_2.html">Misión 2</a></li>
+								<li><a href="Misión_3.html">Misión 3</a></li>
+								<li><a href="#">Contáctanos</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Misión 3</h2>
+								<p>Definición del sistema y diagrama de flujo.</p>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+	
+									<section>
+										<h3 class="major">Sistema</h3>
+										<br>
+										<div class="row">
+											<div class="col-6 col-12-medium">
+												<h4>Para el Reloj</h4>
+												<ul>
+													<li>Entrada: Interruptor</li>
+													<li><b>Sirve como activador simple.</b></li>
+													<li>Proceso: Arduino Uno, D53231 (RTC)</li>
+													<li><b>Entrada: Interruptor</b></li>
+													<li>Sirve como activador simple.</li>
+													<li><b>Proceso: Arduino Uno, D53231 (RTC)</b></li>
+													<li>Para procesar la hora en tiempo real.</li>
+													<li><b>Salida: Pantalla LCD</b></li>
+													<li>Para mostrar la hora a tiempo real.</li>
+												</ul>
+												<h4>Para la Luz</h4>
+												<ul>
+													<li>Entrada: Interruptor</li>
+													<li><b>Sirve como activador simple.</b></li>
+													<li>Proceso: Arduino Uno</li>
+													<li><b>Para procesar y facilidad de conexión entre los componentes.</b></li>
+													<li>Salida: RTB (Luxeon):</li>
+													<li><b>Para generar una luz dentro de la casa.</b></li>
+												</ul>
+											</div>
+											<div class="col-6 col-12-medium">
+												<h4>Para los Cargadores</h4>
+												<ul>
+													<li>Entrada: Interruptor </li>
+													<li><b>Sirve como activador simple.</b></li>
+													<li>Proceso: Batería (1000 mAH) (3,7V)</li>
+													<li><b>La cantidad de energía que se proporcionará al dispositivo durante una hora.</b></li>
+													<li>Salida: Puertos USB</li>
+													<li><b>Cargar dispositivos móviles</b></li>
+												</ul>
+												
+											</div>
+
+	
+										</div>
+										
+									</section>
+
+										<br>
+										
+										<div class="box alt">
+											<div class="row gtr-uniform">
+												
+												<div class="col-4"><span class="image fit"><img src="images/sistema1.jpg" alt="" /></span>
+												<h4>Arduino Uno: Procesador</h4>
+												<p>El Arduino cuenta con diferentes conectores que ayudaran a conectar nuestro sistema. Con diferentes salidas que nos permitirán brindar energía en el producto.</p>
+												</div>
+												<div class="col-4"><span class="image fit"><img src="images/sistema2.jpg" alt="" /></span>
+													<h4>Jumpers: Conectores</h4>
+													<p>Es un elemento que permite cerrar el circuito eléctrico del que forma parte dos conexiones.</p>
+												</div>
+												<div class="col-4"><span class="image fit"><img src="images/sistema3.jpg" alt="" /></span>
+													<h4>DS 3231 (RTC): Entrada</h4>
+													<p>Placa de modulo de reloj que permitirá configurar la hora de encendido y apagado del sistema.</p>
+												</div>
+												<div class="col-4"><span class="image fit"><img src="images/sistema4.jpg" alt="" /></span>
+													<h4>Módulo Cargador TP4056: Entrada</h4>
+													<p>Adecua la entrada de energía para el estándar de 1A de la mayoría de baterías de litio. Irá conectada a la batería de la lampara. </p>
+												</div>
+												<div class="col-4"><span class="image fit"><img src="images/sistema5.jpg" alt="" /></span>
+													<h4>Pantalla LCD: Salida</h4>
+													<p>Se utiliza para ver imágenes fijas y en movimiento, en este caso se podrá ver la hora a través de esta pantalla.</p>
+												</div>
+												<div class="col-4"><span class="image fit"><img src="images/sistema6.jpg" alt="" /></span>
+													<h4>Baterías de Litio: Fuente de Energía</h4>
+													<p>La batería será la fuente primordial de energía del producto. Irá conectada al módulo TP4056.</p>
+												</div>
+												<div class="col-4"><span class="image fit"><img src="images/sistema7.jpg" alt="" /></span>
+													<h4>Switch: Entrada</h4>
+													<p>Pequeño elemento que activará el funcionamiento del producto.</p>
+												</div>
+												<div class="col-4"><span class="image fit"><img src="images/sistema8.jpg" alt="" /></span>
+													<h4>RTB Luxeon: Salida</h4>
+													<p>Es una nueva fuente de luz compacta y con un gran rendimiento energético.</p>
+												</div>
+												<div class="col-4"><span class="image fit"><img src="images/sistema9.jpg" alt="" /></span>
+													<h4>I2C: Proceso</h4>
+													<p>Dispositivo unido a la pantalla LCD que permitirá manejar la pantalla de una manera fácil.</p>
+												</div>
+											</div>
+										</div>
+									
+										<h3 class="major">Diagrama de Flujo</h3>
+										<br>
+										<div class="box alt">
+											<div class="row gtr-uniform">
+												<div class="col-12"><span class="image fit"><img src="images/diagramadeflujo.jpg" alt="" /></span></div>
+											</div>
+										</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Contáctanos</h2>
+							<p>El equipo se encuentra a disposición de cualquier consulta, critica y recomendación relacionada con el proyecto presentado.</p>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Nombre</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Mensaje</label>
+										<textarea name="message" id="message" rows="4"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Enviar Mensaje" /></li>
+								</ul>
+							</form>
+							<ul class="contact">
+								<li class="icon solid fa-phone">(01) 6172400</li>
+								<li class="icon solid fa-envelope"><a href="comunicacion_interna@toulouselautrec.edu.pe">comunicacion_interna@toulouselautrec.edu.pe</a></li>
+								<li class="icon brands fa-twitter"><a href="https://twitter.com/Toulouse_Peru">Twitter</a></li>
+								<li class="icon brands fa-facebook-f"><a href="https://www.facebook.com/ToulouseLautrec.TLS">Facebook</a></li>
+								<li class="icon brands fa-instagram"><a href="https://www.instagram.com/toulouselautrecperu/">Instagram</a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
